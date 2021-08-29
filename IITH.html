@@ -73,7 +73,12 @@
 			<div class="header">
 				<div class="head-nav">
 						<span class="menu"> </span><center>
-						  <ul class="cl-effect-1"-->
+						  
+						      <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+            <!-- <img src="/assets/images/logo.png" alt="IIT Hyderabad" style="width:55%"> -->
+            <img src="/assets/images/horzlogolong.png" alt="IITH Logo">
+	    <ul class="cl-effect-1"-->
                                                                 <li class="active"><a href="index.html">Home</a></li>
 							        <li><a href="Latest.html">Latest</a><li>
 								<li><a href="faq.html">FAQs</a></li>
@@ -82,7 +87,7 @@
 								<li><a href="presentations.html">Presentations</a></li>
 								
 								<div class="clearfix"> </div>
-							<!--/ul-->
+							</ul>
 				</div>
 						<div class="clearfix"> </div>
 			</div>			
@@ -243,7 +248,57 @@
 			</div>
 				<div class="clearfix"> </div>
 		</div>
-	</div>
+</div>
+<meta charset="windows-1252">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<script type="text/javascript">
+			//   Change next line for your text msg.
+			var msg = 'Thank You! Visit Again '
+			var colorTimer = null;
+			//  Color can be altered below - eg. remove - ABCDEF = darker
+			function toHex(n){
+				var hexChars = '0123456789ABCD';
+				if (n == 0) return n;
+				var j, k;
+				var temp = '';
+				while (n != 0){
+					j = n % 16;
+					n = (n - j)/16;
+					temp = hexChars.charAt(j) + temp;
+				}
+				return temp;
+			}
+			function colorize(){
+				if (!document.getElementById) return;
+				for (i=0; i<msg.length; i++){
+					k = Math.round(Math.random() * 16777215);
+					k = toHex(k);
+					while (k.length < 6){
+						k = k + '0';
+					}
+					document.getElementById('colorizer' + i).style.color = '#' + k;
+				}
+				//  Speed change below - Default = 200 - Lower = Faster 
+				colorTimer = window.setTimeout('colorize()', 200);
+			}
+		</script>
+		
+		
+	
+	<body bgcolor="#333333" link="#cc6600" vlink="#cc6600" onload='colorize();'>
+		<div id="text" style="font-size:large; font-family: 'arial', Courier, monospace; letter-spacing:normal; font-weight:bold; font-style:normal; text-align:center; padding-top:5px;">
+			<script>
+				for (var i=0; i<msg.length; i++){
+					document.write("<span id ='colorizer" + i + "'>" + msg.charAt(i) + "</span>");
+				}
+			</script>
+		</div>
+
+
+
 	
 	<div class="footer">
 		<div class="container">
