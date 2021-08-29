@@ -1,0 +1,260 @@
+<html>
+  <head>
+  <head>
+    <meta charset="windows-1252">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Indian Institute of Technology Hyderabad">
+ <meta name="author" content="Indian Institute of Technology Hyderabad">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<script type="text/javascript">
+			//   Change next line for your text msg.
+			var msg = 'Welcome on this page....'
+			var colorTimer = null;
+			//  Color can be altered below - eg. remove - ABCDEF = darker
+			function toHex(n){
+				var hexChars = '0123456789ABCD';
+				if (n == 0) return n;
+				var j, k;
+				var temp = '';
+				while (n != 0){
+					j = n % 16;
+					n = (n - j)/16;
+					temp = hexChars.charAt(j) + temp;
+				}
+				return temp;
+			}
+			function colorize(){
+				if (!document.getElementById) return;
+				for (i=0; i<msg.length; i++){
+					k = Math.round(Math.random() * 16777215);
+					k = toHex(k);
+					while (k.length < 6){
+						k = k + '0';
+					}
+					document.getElementById('colorizer' + i).style.color = '#' + k;
+				}
+				//  Speed change below - Default = 200 - Lower = Faster 
+				colorTimer = window.setTimeout('colorize()', 200);
+			}
+		</script>
+		<!--<meta http-equiv="Refresh" content="10;URL=https://sites.google.com/view/h00">-->
+		
+	</head>
+	<body bgcolor="#333333" link="#cc6600" vlink="#cc6600" onload='colorize();'>
+		<div id="text" style="font-size:large; font-family: 'arial', Courier, monospace; letter-spacing:normal; font-weight:bold; font-style:normal; text-align:center; padding-top:5px;">
+			<script>
+				for (var i=0; i<msg.length; i++){
+					document.write("<span id ='colorizer" + i + "'>" + msg.charAt(i) + "</span>");
+				}
+			</script>
+		</div>
+
+
+    
+<title>Astronomy Club, IITH | Home ::  </title>
+<link rel="shortcut icon" href="images/nebula.jpg" type="image/jpg"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+  <!-- header -->	
+	<div class="banner">
+		<div class="container">
+			<div class="header">
+				<div class="head-nav">
+						<span class="menu"> </span><center>
+						  <ul class="cl-effect-1"-->
+                                                                <li class="active"><a href="index.html">Home</a></li>
+							        <li><a href="Latest.html">Latest</a><li>
+								<li><a href="faq.html">FAQs</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="presentations.html">Presentations</a></li>
+								
+								<div class="clearfix"> </div>
+							<!--/ul-->
+				</div>
+						<div class="clearfix"> </div>
+			</div>			
+					<!-- script-for-nav -->
+					<script>
+						$( "span.menu" ).click(function() {
+						  $( ".head-nav ul" ).slideToggle(300, function() {
+							// Animation complete.
+						  });
+						});
+					</script>
+				<!-- script-for-nav -->
+				<div class="logo">
+					<a href="index.html"><img src="images/astronomy.jpeg" class="img-responsive" alt="" /></a>
+				</div>
+		</div>
+	</div>
+<!-- header -->
+<!-- welcome -->
+	<div class="welcome">
+		<div class="container">
+			<div class="col-md-6 welcome-left">
+				<!--h1>Welcome !</h1>
+				<p> Welcoming to show interest in   astronomy  </p>
+				<h5> lets try to peep into sky </h5-->
+			</div>
+				<!-- FlexSlider -->
+							  <script defer src="js/jquery.flexslider.js"></script>
+							  <script type="text/javascript">
+								$(function(){
+								  SyntaxHighlighter.all();
+								});
+								$(window).load(function(){
+								  $('.flexslider').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+							  </script>
+							<!-- FlexSlider -->
+							<div class="col-md-6 welcome-right">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="images/D.jpg" class="img-responsive" alt="" />	
+						</li>
+						<li>
+							<img src="images/A.jpeg" class="img-responsive" alt="" />
+						</li>
+						<li>	
+							<img src="images/B.jpeg" class="img-responsive" alt="" />
+						</li>
+						<li>	
+							<img src="images/C.jpeg" class="img-responsive" alt="" />
+						</li>
+						<!--li>	
+							<img src="images/5.jpg" class="img-responsive" alt="" />
+						</li>
+						<li>	
+							<img src="images/6.jpg" class="img-responsive" alt="" />
+						</li>
+						<li>	
+							<img src="images/7.jpg" class="img-responsive" alt="" />
+						</li-->
+					</ul>
+				</div>
+			</section>
+			</div>	
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- welcome -->
+<!-- generation -->
+	<div class="generation">
+		<div class="container">
+			<div class="col-md-8 generation-left">
+				<h2>What do we do?</h2>
+				<h5>  Remember : We are an Astronomer ,not an astrologer . We are not predicting your date of birth using star ,but of course  we can predict birth date of star.</h5>
+				<p>Astronomy brings people together.We are trying to put  space heaven down to earth </p>
+				<div class="col-md-6 generation-left1">
+					<div class="icon">
+						<span class="part">1</span>
+					</div>
+					<div class="data">
+						<h4>Astronomy Observation Sessions</h4>
+						<p>We will try Observation sessions regularly. In these sessions, telescope will be used for observing Moon, nebulae, planets like Saturn etc. However, naked eye observations and using binoculars also plays an important role in astronomy.  Informal session involving small quizzes and general discussions.</p>
+					</div>
+						<div class="clearfix"> </div>
+				</div>
+				<!--div class="col-md-6 generation-left1">
+					<div class="icon">
+						<span class="part">2</span>
+					</div>
+					<div class="data">
+						<h4>Planetarium Shows</h4>
+						<p>We are proud to have our own inhouse planetarium built entirely by students. The planetarium was inaugurated on Jan 29th, 2012, and still stands to marvel the dedication of the students who built it. Today we host various planetarium shows, some of which are made by the students themselves.</p>
+					</div>
+						<div class="clearfix"> </div>
+				</div>
+
+				<div class="col-md-6 generation-left1">
+					<div class="icon">
+						<span class="part">3</span>
+					</div>
+					<div class="data">
+					<h4>Astrophotography</h4>
+						<p>To the uninitiated, nothing could be more logical than afocal photography: if you look through a telescope's eyepiece, why wouldn't you point a camera into it? The club has its own SLR camera which is used for various photometrical projects.</p>
+					</div>
+						<div class="clearfix"> </div>
+				</div-->
+
+				<div class="col-md-6 generation-left1">
+					<div class="icon">
+						<span class="part">2</span>
+					</div>
+					<div class="data">
+					<h4>The key idea  for Astronomical Research ()</h4>
+						<p>
+						Astronomy Club, IITH,  put forwarding to explore astronomy research .recently we inaugarated on 15 august  with 14 inch Telescope .we are hoping it will be open for observation soon . 
+						</p>
+					</div>
+						<div class="clearfix"> </div>
+				</div>
+						<div class="clearfix"> </div>
+
+						<div class="clearfix"> </div>
+				<div class="col-md-6 generation-left">
+				<!--	<a class="more3" href="Beginer.html">Beginners Guide</a>
+				</div>
+				<div class="col-md-6 generation-left">
+					<a class="more6" href="Manual.pdf" target="_blank">Handbook</a>
+				</div>
+						<div class="clearfix"> </div>
+			</div>
+			
+			<div class="col-md-4 generate-rig">
+				<div id="likebox-wrapper">
+				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FAstroClubIITK&amp;width=300&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:590px;" allowTransparency="true"></iframe-->
+				</div>
+				<div class="leter">
+					<!--h4>Newsletters</h4-->
+					<p>enter your e-mail</p>
+					<div class="name">
+						<form>
+							<input type="text" placeholder="" required="">
+						</form>
+					</div>	
+						<div class="button">
+							<form>
+								<input type="submit" value="GO">
+							</form>
+						</div>
+							<div class="clearfix"> </div>
+				</div>
+			</div>
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="container">
+		<p>Astronomy Club, IIT Hyderabad.</p><p>
+							<a href="#"><i class="fb"></i></a>
+							<a href="#"><i class="goog"></i></a>
+								<div class="clearfix"> </div>
+		</p>
+		</div>
+	</div>
+<!-- generation -->
+</body>
+</html>
+				
