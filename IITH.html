@@ -7,6 +7,7 @@
     	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<script type="text/javascript">
+
 			//   Change next line for your text msg.
 			var msg = 'Welcome on this page....'
 			var colorTimer = null;
@@ -36,17 +37,10 @@
 				//  Speed change below - Default = 200 - Lower = Faster 
 				colorTimer = window.setTimeout('colorize()', 200);
 			}
-		</script>
 		
-	</head>
-	<!--body bgcolor="#333333" link="#cc6600" vlink="#cc6600" onload='colorize();'-->
-		<div id="text" style="font-size:large; font-family: 'arial', Courier, monospace; letter-spacing:normal; font-weight:bold; font-style:normal; text-align:center; padding-top:5px;">
-			<script>
-				for (var i=0; i<msg.length; i++){
-					document.write("<span id ='colorizer" + i + "'>" + msg.charAt(i) + "</span>");
-				}
-			</script>
-		</div>
+</script>		
+	
+		
 
 
     
@@ -64,6 +58,13 @@
 <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
+  <div id="text" style="font-size:large; font-family: 'arial', Courier, monospace; letter-spacing:normal; font-weight:bold; font-style:normal; text-align:center; padding-top:5px;">
+			<script>
+				for (var i=0; i<msg.length; i++){
+					document.write("<span id ='colorizer" + i + "'>" + msg.charAt(i) + "</span>");
+				}
+			</script>
+  </div>
   <!-- header -->	
 	<div class="banner">
 		<div class="container">
@@ -72,16 +73,16 @@
 						<span class="menu"> </span><center>
 						  
 						      <!-- Begin Logo -->
-        <a class="navbar-brand" href="/">
-            <!-- <img src="/assets/images/logo.png" alt="IIT Hyderabad" style="width:55%"> -->
-            <img src="images/horzlogolong.png" alt="IITH Logo">
+        <a class="navbar-brand" href="#">
+            
+            <img src="images/horzlogolong.png" alt="IITH Logo" width=50px>
 	    <ul class="cl-effect-1"-->
                                                                 <li class="active"><a href="index.html">Home</a></li>
 							        <li><a href="Latest.html">Latest</a><li>
 								<li><a href="faq.html">FAQs</a></li>
 								<li><a href="gallery.html">Gallery</a></li>
 								<li><a href="contact.html">Contact</a></li>
-								<!--li><a href="presentations.html">Presentations</a></li-->
+								<li><a href="presentations.html">Presentations</a></li>
 								
 								<div class="clearfix"> </div>
 							</ul>
@@ -98,7 +99,7 @@
 					</script>
 				<!-- script-for-nav -->
 				<div class="logo">
-					<a href="index.html"><img src="images/astronomy.jpeg" class="img-responsive" alt="" /></a>
+					<a href="IITH.html"><img src="images/astronomy.jpeg" class="img-responsive" alt="" /></a>
 				</div>
 		</div>
 	</div>
@@ -132,7 +133,7 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="images/D.jpg" class="img-responsive" alt="" />	
+							<img src="images/D.jpg" class="img-responsive" alt="" width=500px />	
 						</li>
 						<li>
 							<img src="images/A.jpeg" class="img-responsive" alt="" />
